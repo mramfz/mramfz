@@ -4,7 +4,6 @@ $dark-color : #666666 ;
 $margin : 60px;
 
 
-$mobile:450px;
 
 
 
@@ -149,97 +148,6 @@ ul {
     }
   }
 
-  .team {
-    width: 80%  ;
-    height: 32vw;
-    position: relative;
-    left: 10%;
-
-    &__title {
-      font-size: 25px;
-      margin-bottom: 20px;
-    }
-    .teamMembers {
-      position: absolute;
-      display: flex;
-      width: 100%;
-      height: 100%;
-
-      .teamMember__desc {
-        width: 40%;
-        position: relative;
-        background-color: $primary-color;
-        color: white;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-
-        img {
-          height: 50%;
-          position: relative;
-          left: -20%;
-        }
-        p {
-          font-size: 30px;
-          position: relative;
-          width: 80%;
-
-          left: 10%;
-
-        }
-
-      }
-
-      .teamMember__members {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        width: 60%;
-        height: 100%;
-
-        .teamMember__member {
-          width: 33.33%;
-          height: 50%;
-          background-size: cover;
-          position: relative;
-          &::after{
-            transition: 1s;
-            content: "";
-          }
-          &:hover::after {
-            @extend %hoverCard
-          }
-        }
-        .teamMember__member1{
-          background: #000 center/cover url("../img/woman.svg") no-repeat;
-        }
-        .teamMember__member2{
-          background: #000 center/cover url("../img/man.svg") no-repeat;
-
-        }
-        .teamMember__member3{
-          background: #000 center/cover url("../img/woman.svg") no-repeat;
-        }
-        .teamMember__member4{
-          background: #000 center/cover url("../img/man.svg") no-repeat;
-
-        }
-        .teamMember__member5{
-          background: #000 center/cover url("../img/woman.svg") no-repeat;
-
-        }
-        .teamMember__member6{
-          background: #000 center/cover url("../img/man.svg") no-repeat;
-
-        }
-
-      }
-
-    }
-
-
-  }
 
   .sec3 {
     position: relative;
@@ -561,11 +469,515 @@ ul {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 500px) {
-  .header {
-    height: 56px;
+
+
+
+
+
+
+  .sec1 {
     width: 100%;
+    height: 100vh;
+    position: relative;
+
+    &__pic {
+      position: absolute;
+      height: 90vw;
+      width: 90vw;
+      right: 5%;
+      top: 45vh;
+      background: #000 center/cover url("../img/image.svg") no-repeat;
+
+      z-index: 3;
+
+    }
+    .squarShape {
+      position: absolute;
+      height: 30vh;
+      width: 100%;
+
+      top: 50%;
+      border-radius: 0px;
+      background-color: $primary-color;
+      z-index: 1;
+    }
+    .desc{
+      position: absolute;
+      height: 50%;
+      width:100%;
+      top: 10px;
+      left: 5px;
+      &__title{
+        font-family: Montserrat;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 50px;
+        letter-spacing: 0em;
+        text-align: left;
+
+
+      }
+      &__desc {
+        position: relative;
+        top: 20px;
+        font-size: 25px;
+        color: $dark-color;
+      }
+      &__butt {
+        background-color: $primary-color;
+        border-radius: 2px;
+        cursor: pointer;
+        border: black;
+        color: $light-color;
+        position: relative;
+        height: 40px;
+        width: 150px;
+        top: 30px;
+        font-size: 15px;
+        cursor: pointer;
+
+      }
+    }
+  }
+
+  .team {
+    width: 100%;
+    position: relative;
+    left: 5%;
+
+    &__title {
+      height: 56px;
+      width: 272px;
+      left: 72px;
+
+    }
+    .teamMembers {
+      position: absolute;
+      top: 10%;
+      left: 0%;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+
+
+      .teamMember__desc {
+        width: 90vw;
+        height: 90vw ;
+        position: relative;
+        background-color: $primary-color;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        img {
+          height: 50%;
+          position: relative;
+          left: -20%;
+        }
+        p {
+          font-size: 30px;
+          position: relative;
+          width: 80%;
+
+          left: 10%;
+
+        }
+
+      }
+
+      .teamMember__members {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        left: 0px;
+
+        width:90vw;
+        height: 135vw;
+
+
+        .teamMember__member {
+          width: 45vw;
+          height: 45vw;
+          background-size: cover;
+          position: relative;
+
+
+        }
+        .teamMember__member1{
+          background: #000 center/cover url("../img/woman.svg") no-repeat;
+        }
+        .teamMember__member2{
+          background: #000 center/cover url("../img/man.svg") no-repeat;
+
+        }
+        .teamMember__member3{
+          background: #000 center/cover url("../img/woman.svg") no-repeat;
+        }
+        .teamMember__member4{
+          background: #000 center/cover url("../img/man.svg") no-repeat;
+
+        }
+        .teamMember__member5{
+          background: #000 center/cover url("../img/woman.svg") no-repeat;
+
+        }
+        .teamMember__member6{
+          background: #000 center/cover url("../img/man.svg") no-repeat;
+
+        }
+
+      }
+
+    }
+
+
+  }
+
+
+
+  .sec3 {
+    position: relative;
+    top: 200px;
+
+
+    &__title {
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 40px;
+      letter-spacing: 0em;
+      text-align: left;
+      position: relative;
+      display: flex;
+      align-items: center;
+      left: 10%;
+      margin-bottom: 20px;
+    }
+
+    .cards {
+      display: flex;
+      position: relative;
+      left: 10%;
+      width: 80%;
+      height: auto;
+      list-style-type: none;
+      background-color: white;
+
+
+
+      .card {
+        width: 290px !important;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 30px rgba(13, 107, 106, 0.1);
+        padding: 45px 45px;
+        margin: 15px 0px;
+        cursor: pointer;
+
+        &__name {
+          padding: 10px 0px 10px 0px;
+          display: flex;
+        }
+        &__desc {
+          margin: 10px 0px;
+        }
+        &__star {
+          margin: 10px 0px 0px 0px;
+        }
+
+
+      }
+    }
+  }
+
+
+
+  .sec4 {
+    background: #000 center/cover url("../img/bg.svg") no-repeat;
+    position: relative;
+    width: 100%;
+    margin-top: 300px;
+    padding-top: 100px;
+    p {
+      position: relative;
+      width: 80%;
+      left: 10%;
+      font-size: 28px;
+      font-weight: 800;
+
+    }
+    &__title{
+
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 40px;
+      letter-spacing: 0em;
+      text-align: left;
+      position: relative;
+      display: flex;
+      align-items: center;
+      left: 10%;
+      margin-bottom: 20px;
+
+
+    }
+    hr {
+      width: 80%;
+      left: 10%;
+      position: relative;
+      border-top: 1px solid $light-color  ;
+    }
+
+    &__titles {
+      width: 80%;
+      left: 10%;
+      position: relative;
+      display: flex;
+      margin-top: 50px;
+
+
+
+      p {
+        position: relative;
+        width: 33.33%;
+        font-size: 23px;
+        font-weight: 750;
+        left: 0px;
+        z-index: 2;
+      }
+      &__num {
+        font-family: Montserrat;
+        position: relative;
+        left: -16%;
+        font-size: 52px;
+        font-weight: 700;
+        letter-spacing: 0em;
+        color: #DDDDDD;
+
+      }
+    }
+    .work-process {
+      width: 80%;
+      left: 10%;
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      .process {
+        width: 33.33%;
+
+
+
+
+        .prose {
+
+          margin-top: 30px;
+
+          &__title {
+
+            p {
+              font-size: 20px;
+              font-weight: 600;
+            }
+            img {
+              position: absolute;
+              margin-top: 10px;
+            }
+          }
+          &__desc {
+            border-left: 2px solid $light-color ;
+            p {
+              font-size: 16px;
+              font-weight: 500;
+              margin: 8px;
+
+            }
+          }
+        }
+      }
+    }
+
+    &__img2 {
+      width: 35%;
+      position: absolute;
+      bottom: -15%;
+      right: 25%;
+
+    }
+  }
+
+  .footer {
+    width: 100%;
+    height: 550px;
+    position: relative;
+    top: 100px;
+    background: $primary-color;
+    text-align: center;
+    color: white;
+    p {
+      position: relative;
+      width: 80%;
+      left: 10%;
+      top: 30%;
+    }
+    h1 {
+      position: relative;
+      top: 20%;
+
+    }
+    &__line {
+      width: 100%;
+      position: absolute;
+      left: 0px;
+      top: 30px;
+    }
+    &__social {
+      position: relative;
+      top: 40%;
+      display: flex;
+      justify-content: center;
+      li{
+        position: relative;
+        width: 50px;
+        height: 50px;
+        background-color: #2b7877;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        margin: 5px;
+        cursor: pointer;
+        transition: 0.21s;
+        &:hover {
+          background-color: #5eafad;
+          color: $dark-color;
+        }
+      }
+
+    }
+    .footerMenu {
+      display: flex;
+      position: relative;
+      justify-content: space-evenly;
+      width: 80%;
+      left: 10%;
+      top: 250px;
+      li {
+        cursor: pointer;
+      }
+    }
+
+    .footerButt {
+      width: 80%;
+      left: 10%;
+      position: relative;
+      top: 290px;
+
+      .call {
+        position: relative;
+        margin: 10px;
+        left: 0px;
+        width: 270px;
+        height: 60px;
+
+        &__icon {
+          left: 0px;
+          position: absolute;
+          width: 30px;
+          height: 30px;
+          background-color: #2b7877;
+          border-radius: 50%;
+          padding: 10px;
+          cursor: pointer;
+        }
+        &__ques {
+          position: absolute;
+          right: 0px;
+          top: 0px;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 16px;
+
+        }
+        &__number {
+          right: 0px;
+          button :-15px;
+          position: absolute;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 20px;
+
+        }
+      }
+
+      .email {
+        position: absolute;
+        top: 0px;
+        margin: 0px;
+        left: 300px;
+        width: 270px;
+        height: 60px;
+
+        &__icon {
+          left: 0px;
+          position: absolute;
+          width: 30px;
+          height: 30px;
+          background-color: #2b7877;
+          border-radius: 50%;
+          padding: 10px;
+          cursor: pointer;
+        }
+        &__add {
+          position: absolute;
+          right: 0px;
+          top: 0px;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 16px;
+
+        }
+        &__address {
+          right: 0px;
+          button :-15px;
+          position: absolute;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 20px;
+
+        }
+      }
+
+
+
+    }
+
+
   }
 }
+
+
+
+
+
+
+
 
 
