@@ -3,7 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
     <link rel="stylesheet" href="style/css/main.css" >
+
 </head>
 <body>
 
@@ -30,9 +40,9 @@
         </p>
         <button class="desc__butt">TO ORDER &#8594</button>
     </div>
+    <div class="squarShape"></div>
 
     <div class="sec1__pic">
-
     </div>
 
 </div>
@@ -42,7 +52,7 @@
     <p class="team__title">A team United by shared values</p>
     <div class="teamMembers">
         <div class="teamMember__desc">
-            <h1>6</h1>
+            <img src="style/img/6.svg">
             <p>Professional designers in our team</p>
         </div>
         <div class="teamMember__members">
@@ -57,27 +67,60 @@
 </div>
 
 <div class="sec3">
+    <div class="sec3__title"> <div class="rectangle"></div> Thanks for your sweet words to us</div>
+
+
+
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <ul class="swiper-wrapper cards">
+            <li class="swiper-slide card" >  <div class="card__name"><img src="style/img/sara.svg"> <div class="card__name__prof"><p class="card__name__name">Sara Cristian</p> <p class="card__name__text">Nationwide Group</p></div> </div>
+                <div class="card__desc">Convallis posuere morbi leo urna molestie at elementum eu facilisis. Nunc sed blandit libero volutpat sed cras.</div>
+                <div class="card__star"> <img src="style/img/star.svg"><img src="style/img/star.svg"><img src="style/img/star.svg"><img src="style/img/star.svg"><img src="style/img/star.svg"> </div>
+            </li>
+            <li class="swiper-slide card">   <div class="card__name"><img src="style/img/sara.svg"> <div class="card__name__prof"><p class="card__name__name">Sara Cristian</p> <p class="card__name__text">Nationwide Group</p></div> </div>
+                <div class="card__desc">Convallis posuere morbi leo urna molestie at elementum eu facilisis. Nunc sed blandit libero volutpat sed cras.</div>
+                <div class="card__star"> <img src="style/img/star.svg"><img src="style/img/star.svg"><img src="style/img/star.svg"><img src="style/img/star.svg"><img src="style/img/star.svg"> </div>
+            </li>
+            <li class="swiper-slide card" >  <div class="card__name"><img src="style/img/sara.svg"> <div class="card__name__prof"><p class="card__name__name">Sara Cristian</p> <p class="card__name__text">Nationwide Group</p></div> </div>
+                <div class="card__desc">Convallis posuere morbi leo urna molestie at elementum eu facilisis. Nunc sed blandit libero volutpat sed cras.</div>
+                <div class="card__star"> <img src="style/img/star.svg"><img src="style/img/star.svg"><img src="style/img/star.svg"><img src="style/img/star.svg"><img src="style/img/star.svg"> </div>
+            </li>
+            <li class="swiper-slide card"><div class="card__name"><img src="style/img/sara.svg"> <div class="card__name__prof"><p class="card__name__name">Sara Cristian</p> <p class="card__name__text">Nationwide Group</p></div> </div>
+                <div class="card__desc">Convallis posuere morbi leo urna molestie at elementum eu facilisis. Nunc sed blandit libero volutpat sed cras.</div>
+                <div class="card__star"> <img src="style/img/star.svg"><img src="style/img/star.svg"><img src="style/img/star.svg"><img src="style/img/star.svg"><img src="style/img/star.svg"> </div>
+            </li>
+
+
+        </ul>
+        <div class="swiper-button-next "></div>
+        <div class="swiper-button-prev "></div>
+    </div>
+
+
+
+
 
 </div>
 
 <div class="sec4">
-    <p>Our work process make
-        your dream true</p>
+    <div class="sec4__title"> <div class="rectangle"></div> Our work process make your dream true</div>
     <br>
     <div class="sec4__titles">
         <p>Architectural<br>
-            development</p>
+            development . </p><div class="sec4__titles__num">01.</div>
         <p>Interior<br>
-            design</p>
+            design  </p><div class="sec4__titles__num">02.</div>
         <p>Commercial<br>
-            interior design</p>
+            interior design   </p><div class="sec4__titles__num">03.</div>
     </div>
     <br>
     <hr>
     <div class="work-process">
         <div class="process">
             <div class="prose">
-               <div class="prose__title"> <img src="style/img/shape.svg" alt="1"> <p>Architectural <br>development</p></div>
+                <div class="prose__title"> <img src="style/img/shape.svg" alt="1"> <p>Architectural <br>development</p></div>
                 <div class="prose__desc"><p>- Convallis posuere morbi leo</p> <p>- Ipsum faucibus vitae aliquet nec ullamcorper sit amet risus</p> <p>- Malesuada fames turpis egestas sed tempus urna et pharetra.</p></div>
             </div>
 
@@ -117,7 +160,7 @@
 
         </div>
     </div>
-    
+
     <img src="./style/img/image2.svg" alt="2" class="sec4__img2">
 
 </div>
@@ -125,19 +168,46 @@
 <div class="footer">
     <img src="style/img/line.svg" alt="3" class="footer__line">
     <h1>IN.DESIGN</h1>
-    <p>We ara a lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud equip ex ea commodo consequat.</p>
-    <div class="footer__social">
-        <a>a</a>
-        <a>a</a>
-        <a>a</a>
-        <a>a</a>
-        <a>a</a>
-    </div>
+    <p>We ara a lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam, quis nostrud equip ex ea commodo consequat.</p>
+    <ul class="footer__social">
+        <li> <img src="style/img/facebook.svg"></li>
+        <li><img src="style/img/youtube.svg"></li>
+        <li><img src="style/img/be.svg"></li>
+        <li><img src="style/img/dribbble.svg"></li>
+        <li><img src="style/img/whatsapp.svg"></li>
+    </ul>
 
-    <div class="footerMenu"></div>
+    <ul class="footerMenu">
+        <li class="footerMenu__item">About us</li>
+        <li class="footerMenu__item">Jobs </li>
+        <li class="footerMenu__item">Blog</li>
+        <li class="footerMenu__item">Press</li>
+        <li class="footerMenu__item">FAQ</li>
+        <li class="footerMenu__item">Careers</li>
+        <li class="footerMenu__item">Contact</li>
+        <li class="footerMenu__item">Privacy Policy</li>
+        <li class="footerMenu__item">Sitemap</li>
+        <li class="footerMenu__item">Terms of use</li>
+
+    </ul>
+    <div class="footerButt">
+        <div class="call">
+            <img src="style/img/call.svg" class="call__icon">
+            <p class="call__ques">Have a question?</p>
+            <p class="call_number">310 - 437 - 2766</p>
+        </div>
+        <div class="email">
+            <img src="style/img/email.svg" class="email__icon">
+            <p class="email__add">Contact us at</p>
+            <p class="email_address">abc123@gmail.com</p>
+        </div>
+        <div class="copyRight"></div>
+    </div>
 </div>
 
 
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/app.js"></script>
 
 </body>
 </html>

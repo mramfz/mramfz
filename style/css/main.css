@@ -1,238 +1,386 @@
-.header button, .sec1 .desc__butt {
-  background-color: #0D6B6A;
-  border-radius: 2px;
-  cursor: pointer;
-  border: black;
-  color: #DDDDDD; }
-
-.team .teamMembers .teamMember__members .teamMember__member:hover::after {
-  content: "Sara Nicolson";
-  color: #DDDDDD;
-  display: flex;
-  align-items: end;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  opacity: 0.6;
-  background-color: #0D6B6A; }
+ul {
+  list-style-type: none; }
 
 * {
   margin: 0px;
   padding: 0px;
-  font-family: sans-serif; }
+  font-family: 'Montserrat', sans-serif; }
 
-.header {
-  display: flex;
-  position: relative;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 100%;
-  height: 60px;
-  background: transparent;
-  z-index: 2; }
-  .header a {
-    color: black; }
-    .header a:hover {
-      display: block;
-      color: #0D6B6A;
-      cursor: pointer; }
-  .header p {
-    font-size: 30px;
-    font-family: 'Montserrat'; }
-  .header button {
-    height: 35px;
-    width: 130px; }
-
-.sec1 {
-  width: 100%;
-  height: 80vh;
-  position: relative;
-  top: -60px;
-  background: url("../img/bg.svg"); }
-  .sec1__pic {
-    position: absolute;
-    height: 50vh;
-    width: 50vh;
-    right: 15%;
-    top: 15vh;
-    background: #000 center/cover url("../img/image.svg") no-repeat;
-    z-index: 3; }
-  .sec1 .desc {
+@media screen and (min-width: 500px) {
+  .header button, .sec1 .desc__butt {
+    background-color: #0D6B6A;
+    border-radius: 2px;
+    cursor: pointer;
+    border: black;
+    color: #DDDDDD; }
+  .team .teamMembers .teamMember__members .teamMember__member:hover::after {
+    content: "Sara Nicolson";
+    color: #DDDDDD;
+    display: flex;
+    align-items: end;
     position: absolute;
     height: 100%;
-    width: 45%;
-    top: 100px;
-    left: 200px; }
-    .sec1 .desc__title {
-      font-size: 80px;
-      font-weight: 600; }
-    .sec1 .desc__desc {
-      position: relative;
-      top: 20px;
-      font-size: 25px;
-      color: #666666; }
-    .sec1 .desc__butt {
-      position: relative;
-      height: 40px;
-      width: 150px;
-      top: 30px;
-      font-size: 15px;
-      cursor: pointer; }
-
-.team {
-  width: 80vw;
-  height: 32vw;
-  position: relative;
-  left: 10%; }
-  .team__title {
-    font-size: 25px;
-    margin-bottom: 20px; }
-  .team .teamMembers {
-    position: absolute;
-    display: flex;
     width: 100%;
-    height: 100%; }
-    .team .teamMembers .teamMember__desc {
-      width: 40%;
-      position: relative;
+    opacity: 0.6;
+    background-color: #0D6B6A; }
+  .rectangle {
+    height: 4px;
+    width: 70px;
+    background: #0D6B6A;
+    border-radius: 0px;
+    display: inline-block;
+    align-items: center; }
+  .header {
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    left: 10%;
+    height: 60px;
+    background: transparent;
+    z-index: 2; }
+    .header a {
+      color: black; }
+      .header a:hover {
+        display: block;
+        color: #0D6B6A;
+        cursor: pointer; }
+    .header p {
+      font-size: 30px; }
+    .header button {
+      height: 35px;
+      width: 130px; }
+  .sec1 {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    top: -60px;
+    background: url("../img/bg.svg"); }
+    .sec1__pic {
+      position: absolute;
+      height: 25vw;
+      width: 25vw;
+      right: 15%;
+      top: 15vh;
+      background: #000 center/cover url("../img/image.svg") no-repeat;
+      z-index: 3; }
+    .sec1 .squarShape {
+      position: absolute;
+      height: 30%;
+      width: 20%;
+      right: 23%;
+      top: 15%;
+      border-radius: 0px;
       background-color: #0D6B6A;
-      color: white;
-      display: flex;
-      justify-content: center;
-      flex-direction: column; }
-      .team .teamMembers .teamMember__desc h1 {
-        font-size: 300px;
+      z-index: 1; }
+    .sec1 .desc {
+      position: absolute;
+      height: 100%;
+      width: 45%;
+      top: 100px;
+      left: 200px; }
+      .sec1 .desc__title {
+        font-size: 80px;
+        font-weight: 1000; }
+      .sec1 .desc__desc {
         position: relative;
-        left: 10%;
-        width: 80%; }
-      .team .teamMembers .teamMember__desc p {
-        font-size: 30px;
-        position: relative;
-        width: 80%;
-        left: 10%; }
-    .team .teamMembers .teamMember__members {
-      position: relative;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      width: 60%;
-      height: 100%; }
-      .team .teamMembers .teamMember__members .teamMember__member {
-        width: 33.33%;
-        height: 50%;
-        background-size: cover;
-        position: relative; }
-        .team .teamMembers .teamMember__members .teamMember__member::after {
-          transition: 1s;
-          content: ""; }
-      .team .teamMembers .teamMember__members .teamMember__member1 {
-        background: #000 center/cover url("../img/woman.svg") no-repeat; }
-      .team .teamMembers .teamMember__members .teamMember__member2 {
-        background: #000 center/cover url("../img/man.svg") no-repeat; }
-      .team .teamMembers .teamMember__members .teamMember__member3 {
-        background: #000 center/cover url("../img/woman.svg") no-repeat; }
-      .team .teamMembers .teamMember__members .teamMember__member4 {
-        background: #000 center/cover url("../img/man.svg") no-repeat; }
-      .team .teamMembers .teamMember__members .teamMember__member5 {
-        background: #000 center/cover url("../img/woman.svg") no-repeat; }
-      .team .teamMembers .teamMember__members .teamMember__member6 {
-        background: #000 center/cover url("../img/man.svg") no-repeat; }
-
-.sec4 {
-  background: #000 center/cover url("../img/bg.svg") no-repeat;
-  position: relative;
-  width: 100%;
-  margin-top: 200px;
-  padding-top: 100px; }
-  .sec4 p {
-    position: relative;
-    width: 80%;
-    left: 10%;
-    font-size: 28px;
-    font-weight: 800; }
-  .sec4 hr {
-    width: 80%;
-    left: 10%;
-    position: relative;
-    border-top: 1px solid #DDDDDD; }
-  .sec4__titles {
-    width: 80%;
-    left: 10%;
-    position: relative;
-    display: flex;
-    margin-top: 50px; }
-    .sec4__titles p {
-      width: 33.33%;
-      font-size: 23px;
-      font-weight: 750;
-      left: 0px; }
-  .sec4 .work-process {
-    width: 80%;
-    left: 10%;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row; }
-    .sec4 .work-process .process {
-      width: 33.33%; }
-      .sec4 .work-process .process .prose {
-        margin-top: 30px; }
-        .sec4 .work-process .process .prose__title p {
-          font-size: 20px;
-          font-weight: 600; }
-        .sec4 .work-process .process .prose__title img {
-          position: absolute;
-          margin-top: 10px; }
-        .sec4 .work-process .process .prose__desc {
-          border-left: 2px solid #DDDDDD; }
-          .sec4 .work-process .process .prose__desc p {
-            font-size: 16px;
-            font-weight: 500;
-            margin: 8px; }
-  .sec4__img2 {
-    width: 35%;
-    position: absolute;
-    bottom: -15%;
-    right: 25%; }
-
-.footer {
-  width: 100%;
-  height: 500px;
-  position: relative;
-  top: 100px;
-  background: #0D6B6A;
-  text-align: center;
-  color: white; }
-  .footer p {
-    position: relative;
-    width: 80%;
-    left: 10%;
-    top: 30%; }
-  .footer h1 {
-    position: relative;
-    top: 20%; }
-  .footer__line {
-    width: 100%;
-    position: absolute;
-    left: 0px;
-    top: 30px; }
-  .footer__social {
-    position: relative;
-    top: 40%;
-    display: flex;
-    justify-content: center; }
-    .footer__social a {
-      position: relative;
-      width: 50px;
-      height: 50px;
-      background-color: #2b7877;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 50%;
-      margin: 5px;
-      cursor: pointer;
-      transition: 0.21s; }
-      .footer__social a:hover {
-        background-color: #5eafad;
+        top: 20px;
+        font-size: 25px;
         color: #666666; }
+      .sec1 .desc__butt {
+        position: relative;
+        height: 40px;
+        width: 150px;
+        top: 30px;
+        font-size: 15px;
+        cursor: pointer; }
+  .team {
+    width: 80%;
+    height: 32vw;
+    position: relative;
+    left: 10%; }
+    .team__title {
+      font-size: 25px;
+      margin-bottom: 20px; }
+    .team .teamMembers {
+      position: absolute;
+      display: flex;
+      width: 100%;
+      height: 100%; }
+      .team .teamMembers .teamMember__desc {
+        width: 40%;
+        position: relative;
+        background-color: #0D6B6A;
+        color: white;
+        display: flex;
+        justify-content: center;
+        flex-direction: column; }
+        .team .teamMembers .teamMember__desc img {
+          height: 50%;
+          position: relative;
+          left: -20%; }
+        .team .teamMembers .teamMember__desc p {
+          font-size: 30px;
+          position: relative;
+          width: 80%;
+          left: 10%; }
+      .team .teamMembers .teamMember__members {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 60%;
+        height: 100%; }
+        .team .teamMembers .teamMember__members .teamMember__member {
+          width: 33.33%;
+          height: 50%;
+          background-size: cover;
+          position: relative; }
+          .team .teamMembers .teamMember__members .teamMember__member::after {
+            transition: 1s;
+            content: ""; }
+        .team .teamMembers .teamMember__members .teamMember__member1 {
+          background: #000 center/cover url("../img/woman.svg") no-repeat; }
+        .team .teamMembers .teamMember__members .teamMember__member2 {
+          background: #000 center/cover url("../img/man.svg") no-repeat; }
+        .team .teamMembers .teamMember__members .teamMember__member3 {
+          background: #000 center/cover url("../img/woman.svg") no-repeat; }
+        .team .teamMembers .teamMember__members .teamMember__member4 {
+          background: #000 center/cover url("../img/man.svg") no-repeat; }
+        .team .teamMembers .teamMember__members .teamMember__member5 {
+          background: #000 center/cover url("../img/woman.svg") no-repeat; }
+        .team .teamMembers .teamMember__members .teamMember__member6 {
+          background: #000 center/cover url("../img/man.svg") no-repeat; }
+  .sec3 {
+    position: relative;
+    top: 200px; }
+    .sec3__title {
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 40px;
+      letter-spacing: 0em;
+      text-align: left;
+      position: relative;
+      display: flex;
+      align-items: center;
+      left: 10%;
+      margin-bottom: 20px; }
+    .sec3 .cards {
+      display: flex;
+      position: relative;
+      left: 10%;
+      width: 80%;
+      height: auto;
+      list-style-type: none;
+      background-color: white; }
+      .sec3 .cards .card {
+        width: 290px !important;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 30px rgba(13, 107, 106, 0.1);
+        padding: 45px 45px;
+        margin: 15px 0px;
+        cursor: pointer; }
+        .sec3 .cards .card__name {
+          padding: 10px 0px 10px 0px;
+          display: flex; }
+        .sec3 .cards .card__desc {
+          margin: 10px 0px; }
+        .sec3 .cards .card__star {
+          margin: 10px 0px 0px 0px; }
+  .sec4 {
+    background: #000 center/cover url("../img/bg.svg") no-repeat;
+    position: relative;
+    width: 100%;
+    margin-top: 300px;
+    padding-top: 100px; }
+    .sec4 p {
+      position: relative;
+      width: 80%;
+      left: 10%;
+      font-size: 28px;
+      font-weight: 800; }
+    .sec4__title {
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 40px;
+      letter-spacing: 0em;
+      text-align: left;
+      position: relative;
+      display: flex;
+      align-items: center;
+      left: 10%;
+      margin-bottom: 20px; }
+    .sec4 hr {
+      width: 80%;
+      left: 10%;
+      position: relative;
+      border-top: 1px solid #DDDDDD; }
+    .sec4__titles {
+      width: 80%;
+      left: 10%;
+      position: relative;
+      display: flex;
+      margin-top: 50px; }
+      .sec4__titles p {
+        position: relative;
+        width: 33.33%;
+        font-size: 23px;
+        font-weight: 750;
+        left: 0px;
+        z-index: 2; }
+      .sec4__titles__num {
+        font-family: Montserrat;
+        position: relative;
+        left: -16%;
+        font-size: 52px;
+        font-weight: 700;
+        letter-spacing: 0em;
+        color: #DDDDDD; }
+    .sec4 .work-process {
+      width: 80%;
+      left: 10%;
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row; }
+      .sec4 .work-process .process {
+        width: 33.33%; }
+        .sec4 .work-process .process .prose {
+          margin-top: 30px; }
+          .sec4 .work-process .process .prose__title p {
+            font-size: 20px;
+            font-weight: 600; }
+          .sec4 .work-process .process .prose__title img {
+            position: absolute;
+            margin-top: 10px; }
+          .sec4 .work-process .process .prose__desc {
+            border-left: 2px solid #DDDDDD; }
+            .sec4 .work-process .process .prose__desc p {
+              font-size: 16px;
+              font-weight: 500;
+              margin: 8px; }
+    .sec4__img2 {
+      width: 35%;
+      position: absolute;
+      bottom: -15%;
+      right: 25%; }
+  .footer {
+    width: 100%;
+    height: 550px;
+    position: relative;
+    top: 100px;
+    background: #0D6B6A;
+    text-align: center;
+    color: white; }
+    .footer p {
+      position: relative;
+      width: 80%;
+      left: 10%;
+      top: 30%; }
+    .footer h1 {
+      position: relative;
+      top: 20%; }
+    .footer__line {
+      width: 100%;
+      position: absolute;
+      left: 0px;
+      top: 30px; }
+    .footer__social {
+      position: relative;
+      top: 40%;
+      display: flex;
+      justify-content: center; }
+      .footer__social li {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        background-color: #2b7877;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        margin: 5px;
+        cursor: pointer;
+        transition: 0.21s; }
+        .footer__social li:hover {
+          background-color: #5eafad;
+          color: #666666; }
+    .footer .footerMenu {
+      display: flex;
+      position: relative;
+      justify-content: space-evenly;
+      width: 80%;
+      left: 10%;
+      top: 250px; }
+      .footer .footerMenu li {
+        cursor: pointer; }
+    .footer .footerButt {
+      width: 80%;
+      left: 10%;
+      position: relative;
+      top: 290px; }
+      .footer .footerButt .call {
+        position: relative;
+        margin: 10px;
+        left: 0px;
+        width: 270px;
+        height: 60px; }
+        .footer .footerButt .call__icon {
+          left: 0px;
+          position: absolute;
+          width: 30px;
+          height: 30px;
+          background-color: #2b7877;
+          border-radius: 50%;
+          padding: 10px;
+          cursor: pointer; }
+        .footer .footerButt .call__ques {
+          position: absolute;
+          right: 0px;
+          top: 0px;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 16px; }
+        .footer .footerButt .call__number {
+          right: 0px;
+          button: -15px;
+          position: absolute;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 20px; }
+      .footer .footerButt .email {
+        position: absolute;
+        top: 0px;
+        margin: 0px;
+        left: 300px;
+        width: 270px;
+        height: 60px; }
+        .footer .footerButt .email__icon {
+          left: 0px;
+          position: absolute;
+          width: 30px;
+          height: 30px;
+          background-color: #2b7877;
+          border-radius: 50%;
+          padding: 10px;
+          cursor: pointer; }
+        .footer .footerButt .email__add {
+          position: absolute;
+          right: 0px;
+          top: 0px;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 16px; }
+        .footer .footerButt .email__address {
+          right: 0px;
+          button: -15px;
+          position: absolute;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 20px; } }
+
+@media screen and (max-width: 500px) {
+  .header {
+    height: 56px;
+    width: 100%; } }
