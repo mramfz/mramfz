@@ -149,6 +149,98 @@ ul {
   }
 
 
+  .team {
+    width: 80%  ;
+    height: 32vw;
+    position: relative;
+    left: 10%;
+
+    &__title {
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+    .teamMembers {
+      position: absolute;
+      display: flex;
+      width: 100%;
+      height: 100%;
+
+      .teamMember__desc {
+        width: 40%;
+        position: relative;
+        background-color: $primary-color;
+        color: white;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        img {
+          height: 50%;
+          position: relative;
+          left: -20%;
+        }
+        p {
+          font-size: 30px;
+          position: relative;
+          width: 80%;
+
+          left: 10%;
+
+        }
+
+      }
+
+      .teamMember__members {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 60%;
+        height: 100%;
+
+        .teamMember__member {
+          width: 33.33%;
+          height: 50%;
+          background-size: cover;
+          position: relative;
+          &::after{
+            transition: 1s;
+            content: "";
+          }
+          &:hover::after {
+            @extend %hoverCard
+          }
+        }
+        .teamMember__member1{
+          background: #000 center/cover url("../img/woman.svg") no-repeat;
+        }
+        .teamMember__member2{
+          background: #000 center/cover url("../img/man.svg") no-repeat;
+
+        }
+        .teamMember__member3{
+          background: #000 center/cover url("../img/woman.svg") no-repeat;
+        }
+        .teamMember__member4{
+          background: #000 center/cover url("../img/man.svg") no-repeat;
+
+        }
+        .teamMember__member5{
+          background: #000 center/cover url("../img/woman.svg") no-repeat;
+
+        }
+        .teamMember__member6{
+          background: #000 center/cover url("../img/man.svg") no-repeat;
+
+        }
+
+      }
+
+    }
+
+
+  }
+
   .sec3 {
     position: relative;
     top: 200px;
@@ -567,6 +659,7 @@ ul {
       width: 272px;
       left: 72px;
 
+
     }
     .teamMembers {
       position: absolute;
@@ -656,7 +749,7 @@ ul {
 
   .sec3 {
     position: relative;
-    top: 200px;
+    top: 900px;
 
 
     &__title {
@@ -668,16 +761,14 @@ ul {
       position: relative;
       display: flex;
       align-items: center;
-      left: 10%;
+      left: 5%;
+      right: 5%;
       margin-bottom: 20px;
     }
 
     .cards {
-      display: flex;
       position: relative;
       left: 10%;
-      width: 80%;
-      height: auto;
       list-style-type: none;
       background-color: white;
 
@@ -713,7 +804,7 @@ ul {
     background: #000 center/cover url("../img/bg.svg") no-repeat;
     position: relative;
     width: 100%;
-    margin-top: 300px;
+    margin-top: 800px;
     padding-top: 100px;
     p {
       position: relative;

@@ -13,6 +13,16 @@ ul {
     cursor: pointer;
     border: black;
     color: #DDDDDD; }
+  .team .teamMembers .teamMember__members .teamMember__member:hover::after {
+    content: "Sara Nicolson";
+    color: #DDDDDD;
+    display: flex;
+    align-items: end;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+    background-color: #0D6B6A; }
   .rectangle {
     height: 4px;
     width: 70px;
@@ -85,6 +95,63 @@ ul {
         top: 30px;
         font-size: 15px;
         cursor: pointer; }
+  .team {
+    width: 80%;
+    height: 32vw;
+    position: relative;
+    left: 10%; }
+    .team__title {
+      font-size: 25px;
+      margin-bottom: 20px; }
+    .team .teamMembers {
+      position: absolute;
+      display: flex;
+      width: 100%;
+      height: 100%; }
+      .team .teamMembers .teamMember__desc {
+        width: 40%;
+        position: relative;
+        background-color: #0D6B6A;
+        color: white;
+        display: flex;
+        justify-content: center;
+        flex-direction: column; }
+        .team .teamMembers .teamMember__desc img {
+          height: 50%;
+          position: relative;
+          left: -20%; }
+        .team .teamMembers .teamMember__desc p {
+          font-size: 30px;
+          position: relative;
+          width: 80%;
+          left: 10%; }
+      .team .teamMembers .teamMember__members {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 60%;
+        height: 100%; }
+        .team .teamMembers .teamMember__members .teamMember__member {
+          width: 33.33%;
+          height: 50%;
+          background-size: cover;
+          position: relative; }
+          .team .teamMembers .teamMember__members .teamMember__member::after {
+            transition: 1s;
+            content: ""; }
+        .team .teamMembers .teamMember__members .teamMember__member1 {
+          background: #000 center/cover url("../img/woman.svg") no-repeat; }
+        .team .teamMembers .teamMember__members .teamMember__member2 {
+          background: #000 center/cover url("../img/man.svg") no-repeat; }
+        .team .teamMembers .teamMember__members .teamMember__member3 {
+          background: #000 center/cover url("../img/woman.svg") no-repeat; }
+        .team .teamMembers .teamMember__members .teamMember__member4 {
+          background: #000 center/cover url("../img/man.svg") no-repeat; }
+        .team .teamMembers .teamMember__members .teamMember__member5 {
+          background: #000 center/cover url("../img/woman.svg") no-repeat; }
+        .team .teamMembers .teamMember__members .teamMember__member6 {
+          background: #000 center/cover url("../img/man.svg") no-repeat; }
   .sec3 {
     position: relative;
     top: 200px; }
@@ -424,7 +491,7 @@ ul {
           background: #000 center/cover url("../img/man.svg") no-repeat; }
   .sec3 {
     position: relative;
-    top: 200px; }
+    top: 900px; }
     .sec3__title {
       font-size: 36px;
       font-weight: 700;
@@ -434,14 +501,12 @@ ul {
       position: relative;
       display: flex;
       align-items: center;
-      left: 10%;
+      left: 5%;
+      right: 5%;
       margin-bottom: 20px; }
     .sec3 .cards {
-      display: flex;
       position: relative;
       left: 10%;
-      width: 80%;
-      height: auto;
       list-style-type: none;
       background-color: white; }
       .sec3 .cards .card {
@@ -462,7 +527,7 @@ ul {
     background: #000 center/cover url("../img/bg.svg") no-repeat;
     position: relative;
     width: 100%;
-    margin-top: 300px;
+    margin-top: 800px;
     padding-top: 100px; }
     .sec4 p {
       position: relative;
