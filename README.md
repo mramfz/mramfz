@@ -1,7 +1,5 @@
 - 👋 Hi, I’m @miramfz
-- 👀 I’m interested in life
-- 🌱 I’m currently learning life
-- 💞️ I’m looking to collaborate with humans
+
 - 📫 Consol.log
 
 <!---
